@@ -87,3 +87,55 @@ export default function FirstBlog() {
 
 #### **Jawab**
 >Jika menggunakan konsep routing seperti praktikum 2, struktur folder menjadi kaku sehingga sulit diubah seiring perubahan aplikasi, selain itu jika ada perubahan struktur routing bisa jadi rumit dan memakan waktu yang banyak.
+
+
+### Praktikum 3
+
+#### Langkah 1
+
+>Buatlah file `/products/page.tsx` yang berisi function component untuk menampilkan list dari products seperti kode berikut.
+
+```tsx
+export default function ProductList() {
+  return (
+        <div>
+          <h1>Product List</h1>
+          <h2>Product 1</h2>
+          <h2>Product 2</h2>
+          <h2>Product 3</h2>
+        </div>
+  );
+}
+```
+![output](docs/image/L1P3.png)
+
+#### Langkah 3
+
+>Kemudian buatlah file page.tsx pada lokasi `/app/products/[productId]` dan tambahkan kode sebagai berikut.
+
+```tsx
+type Props = {
+  params: {
+        productId: string
+  }
+}
+
+export default function ProductDetails({ params }: Props) {
+  return (
+        <h1>Details about product {params.productId}</h1>
+  )
+}
+```
+![output](docs/image/L3P3.png)
+
+#### **Todo** 1
+
+>Perbaiki implementasi Praktikum 2 menggunakan Dynamic Routes
+
+![output](docs/image/P3Todo1.gif)
+
+#### **Todo** 2
+
+>Dengan menggunakan konsep Nested Routes dan Dynamic Routes, buatlah halaman dengan `routing /products/[productId]/reviews/[reviewId]`
+
+![output](docs/image/P3Todo2.gif)
