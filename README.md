@@ -38,3 +38,52 @@ export default function About() {
  >Buatlah halaman `/profile` yang menampilkan isi biodata anda dengan menggunakan routing di `NextJS`
 
  ![output](docs/image/ProfileTodoP1.png)
+
+
+### Praktikum 2 
+
+#### Langkah 2
+>Pada file `/blogs/page.tsx` buatlah function component seperti kode berikut atau anda dapat mengkreasikan tampilan dengan selera anda!
+
+```tsx
+export default function Blog() {
+  return (
+        <h1>Blog</h1>
+  );
+}
+```
+
+![output](docs/image/L2P2.png)
+
+#### Langkah 3 
+>Pada file `/blogs/first/page.tsx` buatlah function component seperti berikut:
+
+```tsx
+export default function FirstBlog() {
+  return (
+        <h1>First Blog</h1>
+  );
+}
+```
+
+![output](docs/image/L3P2.png)
+
+#### Blogs Second **Todo**
+
+> Lengkapi function component pada `/blogs/second/page.tsx`
+
+```tsx
+export default function FirstBlog() {
+    return (
+        <h1>Second Blog</h1>
+    );
+}
+```
+
+![output](docs/image/BlogsSecondTodo.png)
+
+#### **Pertanyaan**
+>Apa kekurangan yang mungkin terjadi jika menggunakan pendekatan pada Praktikum 2 untuk menangani routing?
+
+#### **Jawab**
+>Jika menggunakan konsep routing seperti praktikum 2, struktur folder menjadi kaku sehingga sulit diubah seiring perubahan aplikasi, selain itu jika ada perubahan struktur routing bisa jadi rumit dan memakan waktu yang banyak.

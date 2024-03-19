@@ -1,13 +1,25 @@
-export default function Profile(){
-    return(
-        <>
-            <h1>Biodata Diri</h1>
+import Link from "next/link";
+
+export default function Home(){
+    return (
+        <div>
+            <h1> Welcome to Home</h1>
             <ul>
-                <li><h3>Nama: Arsyanda Irza Rabbani Yuardhino</h3></li>
-                <li><h3>NIM: 2141720245</h3></li>
-                <li><h3>Jurusan: Teknologi Informasi</h3></li>
-                <li><h3>Prodi: D4-Teknik Informatika</h3></li>
+                <li>
+                    <Link href='/profile'>Profile</Link>
+                </li>
+                <li>
+                    <Link href='/about'>about</Link>
+                </li>
+                <li>
+                    <Link href='/blogs'>Blogs</Link>
+                </li>
+                <li>
+                    <Link href='/products'>Products</Link>
+                </li>
             </ul>
-        </>
+           
+            
+        </div>
     )
-  }
+}
