@@ -139,3 +139,40 @@ export default function ProductDetails({ params }: Props) {
 >Dengan menggunakan konsep Nested Routes dan Dynamic Routes, buatlah halaman dengan `routing /products/[productId]/reviews/[reviewId]`
 
 ![output](docs/image/P3Todo2.gif)
+
+### Praktikum 4
+
+#### Langkah 1
+
+>Pada file `/app/page.tsx`tambahkan import Link komponen seperti kode berikut.
+
+```tsx
+
+import Link from "next/link";
+
+```
+![output](docs/image/L1P4.png)
+
+#### Langkah 2
+
+>Tambahkan penggunaan Link komponen untuk mengakses halaman `/profile` dan ` /about`
+
+```tsx
+export default function Home() {
+  return (
+        <div>
+          <h1>Welcome to Home</h1>
+          <Link href='/profile'>Profile</Link>
+          <Link href='/about'>About</Link>
+        </div>
+  );
+}
+```
+![output](docs/image/L2P4.png)
+![gif](docs/image/L2P4.gif)
+
+#### **Todo** 
+
+>Tambahkan link yang sebelumnya anda telah kerjakan!
+
+![gif](docs/image/P4Todo.gif)
