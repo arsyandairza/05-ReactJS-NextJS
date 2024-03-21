@@ -1,4 +1,4 @@
-# 04 | ReactJS Dan NextJS
+# 05 | ReactJS Dan NextJS
 
 ## Praktikum 1: Membuat routing sederhana
 
